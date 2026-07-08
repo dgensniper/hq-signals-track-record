@@ -1,0 +1,7 @@
+{
+  "generatedAt": null,
+  "overview": { "winRate": "0.0", "totalSignals": 0, "wins": 0, "losses": 0, "resolved": 0, "pending": 0, "totalPnl": "0.00", "daysRunning": 0 },
+  "strategic": { "total": 0, "wins": 0, "losses": 0, "resolved": 0, "pending": 0, "winRate": "0.0", "totalPnl": "0.00" },
+  "rapid": { "total": 0, "wins": 0, "losses": 0, "resolved": 0, "pending": 0, "winRate": "0.0", "totalPnl": "0.00" },
+  "byCategory": []
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HQ Signals — Public Track Record</title>
+<meta name="description" content="AI-powered prediction market trading. Every signal logged before resolution — win or lose.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
+.nav{padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1a1a1a;position:sticky;top:0;background:#0a0a0a;z-index:10}
+.logo{font-size:18px;font-weight:700;color:#fff;letter-spacing:-.5px}
+.logo span{color:#4ade80}
+.nav-cta{background:#4ade80;color:#000;font-size:13px;font-weight:600;padding:8px 18px;border-radius:6px;text-decoration:none}
+.hero{padding:4rem 2rem 2rem;text-align:center;max-width:800px;margin:0 auto}
+.hero h1{font-size:42px;font-weight:700;letter-spacing:-1px;line-height:1.1;margin-bottom:1rem}
+.hero h1 span{color:#4ade80}
+.hero p{font-size:17px;color:#888;line-height:1.6;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#4ade80;color:#000;font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none}
+.btn-secondary{background:transparent;color:#e8e8e8;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;border:1px solid #333}
+.stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#1a1a1a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;margin:2rem 0}
+.stat-item{background:#0a0a0a;padding:1.5rem 2rem;text-align:center}
+.stat-number{font-size:36px;font-weight:700;color:#4ade80;letter-spacing:-1px}
+.stat-label{font-size:12px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.section{padding:2rem 2rem;max-width:1100px;margin:0 auto}
+.section-title{font-size:22px;font-weight:600;margin-bottom:.5rem}
+.section-sub{font-size:14px;color:#666;margin-bottom:1.5rem}
+.verified-badge{font-size:11px;font-weight:600;background:#0a2419;color:#4ade80;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-left:8px}
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2rem}
+.track-card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:1.5rem}
+.track-card.rapid{border-color:#facc15}
+.track-card.strategic{border-color:#4ade80}
+.track-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+.track-card.rapid .track-label{color:#facc15}
+.track-card.strategic .track-label{color:#4ade80}
+.track-winrate{font-size:42px;font-weight:700;letter-spacing:-1px;margin-bottom:.25rem}
+.track-card.rapid .track-winrate{color:#facc15}
+.track-card.strategic .track-winrate{color:#4ade80}
+.track-meta{font-size:13px;color:#666;margin-bottom:1rem}
+.track-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.track-stat{background:#0a0a0a;border-radius:6px;padding:.5rem;text-align:center}
+.track-stat-num{font-size:18px;font-weight:600;color:#e8e8e8}
+.track-stat-label{font-size:10px;color:#555;text-transform:uppercase;margin-top:2px}
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.cat-card{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:1rem 1.25rem}
+.cat-name{font-size:13px;font-weight:500;color:#ccc;text-transform:capitalize;margin-bottom:.5rem}
+.cat-winrate{font-size:28px;font-weight:700;color:#4ade80}
+.cat-winrate.cold{color:#f87171}
+.cat-winrate.neutral{color:#facc15}
+.cat-meta{font-size:11px;color:#555;margin-top:4px}
+.signals-table{width:100%;border-collapse:collapse}
+.signals-table th{font-size:11px;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:8px 12px;text-align:left;border-bottom:1px solid #1a1a1a;position:sticky;top:65px;background:#0a0a0a}
+.signals-table td{font-size:13px;padding:10px 12px;border-bottom:1px solid #111;color:#ccc}
+.signals-table tr:hover td{background:#111}
+.table-wrap{max-height:600px;overflow-y:auto;border:1px solid #1a1a1a;border-radius:10px}
+.badge{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;display:inline-block}
+.badge.win{background:#0a2419;color:#4ade80}
+.badge.loss{background:#2e0a0a;color:#f87171}
+.badge.pending{background:#1a1a1a;color:#666}
+.badge.rapid{background:#2a2000;color:#facc15}
+.badge.strategic{background:#0a2419;color:#4ade80}
+.pick-yes{color:#4ade80;font-weight:600}
+.pick-no{color:#f87171;font-weight:600}
+.footer{padding:2rem;text-align:center;border-top:1px solid #1a1a1a;color:#444;font-size:12px;margin-top:2rem}
+.footer .updated{color:#4ade80;margin-top:4px}
+.disclaimer{font-size:11px;color:#444;text-align:center;padding:1rem 2rem;max-width:800px;margin:0 auto}
+.empty-state{color:#555;padding:2rem;text-align:center;font-size:13px;background:#111;border-radius:10px;border:1px solid #1e1e1e}
+.loading{color:#555;font-style:italic}
+@media(max-width:600px){.track-grid{grid-template-columns:1fr}.track-stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">HQ<span>Signals</span></div>
+  <a href="https://whop.com/hq-signals-c939/" class="nav-cta" target="_blank">Get Access</a>
+</nav>
+
+<div class="hero">
+  <h1>AI-Powered<br><span>Prediction Markets</span></h1>
+  <p>12 specialized AI agents analyze 2,000+ markets every 30 minutes. High-confidence signals with Kelly Criterion bet sizing — every pick logged publicly before it resolves.</p>
+  <div class="hero-cta">
+    <a href="#paper-trading" class="btn-primary">View Track Record</a>
+    <a href="https://whop.com/hq-signals-c939/" class="btn-secondary" target="_blank">Get Access</a>
+  </div>
+</div>
+
+<div class="stats-bar" id="statsBar">
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Win Rate</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Resolved Picks</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Days Running</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Paper P&L</div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">Signal Tracks</div>
+  <div class="section-sub">Strategic signals run every 30 minutes. Rapid signals target same-day markets.</div>
+  <div class="track-grid" id="trackGrid">
+    <div class="track-card strategic">
+      <div class="track-label">⚙️ Strategic</div>
+      <div class="track-winrate loading">—</div>
+      <div class="track-meta loading">Loading...</div>
+      <div class="track-stats">
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div>
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div>
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&L</div></div>
+      </div>
+    </div>
+    <div class="track-card rapid">
+      <div class="track-label">⚡ Rapid</div>
+      <div class="track-winrate loading">—</div>
+      <div class="track-meta loading">Loading...</div>
+      <div class="track-stats">
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div>
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div>
+        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&L</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Category Leaderboard</div>
+  <div class="section-sub">Ranked by win rate — minimum 3 resolved picks to qualify</div>
+  <div style="overflow-x:auto">
+    <table class="signals-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Category</th>
+          <th>Win Rate</th>
+          <th>Record</th>
+          <th>Pending</th>
+          <th>P&L</th>
+          <th>Avg Edge</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody"><tr><td colspan="7" class="loading" style="padding:1rem">Loading...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Performance by Category</div>
+  <div class="section-sub">Win rate across all resolved signals</div>
+  <div class="category-grid" id="categoryGrid"><div class="loading">Loading...</div></div>
+</div>
+
+<div class="section" id="paper-trading">
+  <div class="section-title">Full Signal Log <span class="verified-badge">Verified</span></div>
+  <div class="section-sub" id="signalCount">Every prediction logged before resolution — wins and losses, nothing hidden.</div>
+  <div class="table-wrap">
+    <table class="signals-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Market</th>
+          <th>Pick</th>
+          <th>Track</th>
+          <th>Result</th>
+          <th>Category</th>
+          <th>Confidence</th>
+          <th>P&L</th>
+        </tr>
+      </thead>
+      <tbody id="signalsBody"><tr><td colspan="8" class="loading" style="padding:1rem">Loading...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="disclaimer">
+  ⚠️ Prediction market trading involves risk. Past performance does not guarantee future results. Paper trading P&L is simulated and does not represent actual trading results. This is not financial advice.
+</div>
+
+<div class="footer">
+  © 2026 HQ Signals — AI-Powered Prediction Market Intelligence
+  <div class="updated" id="lastUpdated"></div>
+</div>
+
+<script>
+function fmtDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' });
+}
+
+async function loadLeaderboard() {
+  try {
+    const res = await fetch('./leaderboard.json?_=' + Date.now());
+    const data = await res.json();
+    const tbody = document.getElementById('leaderboardBody');
+    if (!data.length) {
+      tbody.innerHTML = '<tr><td colspan="7"><div class="empty-state">No resolved data yet — check back as markets resolve.</div></td></tr>';
+      return;
+    }
+    let rank = 0;
+    tbody.innerHTML = data.map(r => {
+      const hasWinRate = r.winRate !== null;
+      if (hasWinRate) rank++;
+      const wr = parseFloat(r.winRate ?? 0);
+      const wrColor = wr >= 65 ? '#4ade80' : wr >= 50 ? '#facc15' : '#f87171';
+      const pnl = parseFloat(r.pnl);
+      const pnlStr = `<span style="color:${pnl >= 0 ? '#4ade80' : '#f87171'}">${pnl >= 0 ? '+' : ''}$${Math.abs(pnl).toFixed(0)}</span>`;
+      const rankStr = hasWinRate ? `<b>#${rank}</b>` : '<span style="color:#444">—</span>';
+      const wrStr = hasWinRate ? `<span style="color:${wrColor};font-weight:700">${r.winRate}%</span>` : '<span style="color:#444">—</span>';
+      return `<tr>
+        <td>${rankStr}</td>
+        <td><b>${r.category}</b></td>
+        <td>${wrStr}</td>
+        <td>${r.wins}W / ${r.losses}L</td>
+        <td style="color:#666">${r.pending}</td>
+        <td>${pnlStr}</td>
+        <td style="color:#888">${r.avgEdge ? r.avgEdge + 'pts' : '—'}</td>
+      </tr>`;
+    }).join('');
+  } catch (err) {
+    console.error('Leaderboard failed:', err);
+  }
+}
+
+async function loadStats() {
+  try {
+    const res = await fetch('./stats.json?_=' + Date.now());
+    const data = await res.json();
+
+    if (data.generatedAt) {
+      document.getElementById('lastUpdated').textContent =
+        `Data updates hourly — last updated ${new Date(data.generatedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`;
+    }
+
+    const statsBar = document.getElementById('statsBar');
+    const pnl = parseFloat(data.overview.totalPnl);
+    statsBar.innerHTML = `
+      <div class="stat-item"><div class="stat-number">${data.overview.winRate}%</div><div class="stat-label">Win Rate</div></div>
+      <div class="stat-item"><div class="stat-number">${data.overview.resolved}</div><div class="stat-label">Resolved Picks</div></div>
+      <div class="stat-item"><div class="stat-number">${data.overview.daysRunning}</div><div class="stat-label">Days Running</div></div>
+      <div class="stat-item"><div class="stat-number" style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':''}$${Math.abs(pnl).toFixed(0)}</div><div class="stat-label">Paper P&L</div></div>
+    `;
+    const s = data.strategic;
+    const r = data.rapid;
+    const sPnl = parseFloat(s.totalPnl);
+    const rPnl = parseFloat(r.totalPnl);
+    document.getElementById('trackGrid').innerHTML = `
+      <div class="track-card strategic">
+        <div class="track-label">⚙️ Strategic</div>
+        <div class="track-winrate">${s.resolved > 0 ? s.winRate + '%' : '—'}</div>
+        <div class="track-meta">${s.wins}W / ${s.losses}L — ${s.pending} pending</div>
+        <div class="track-stats">
+          <div class="track-stat"><div class="track-stat-num">${s.total}</div><div class="track-stat-label">Total</div></div>
+          <div class="track-stat"><div class="track-stat-num">${s.resolved}</div><div class="track-stat-label">Resolved</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${sPnl>=0?'#4ade80':'#f87171'}">${sPnl>=0?'+':''}$${Math.abs(sPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+        </div>
+      </div>
+      <div class="track-card rapid">
+        <div class="track-label">⚡ Rapid</div>
+        <div class="track-winrate">${r.resolved > 0 ? r.winRate + '%' : '—'}</div>
+        <div class="track-meta">${r.wins}W / ${r.losses}L — ${r.pending} pending</div>
+        <div class="track-stats">
+          <div class="track-stat"><div class="track-stat-num">${r.total}</div><div class="track-stat-label">Total</div></div>
+          <div class="track-stat"><div class="track-stat-num">${r.resolved}</div><div class="track-stat-label">Resolved</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${rPnl>=0?'#facc15':'#f87171'}">${rPnl>=0?'+':''}$${Math.abs(rPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+        </div>
+      </div>
+    `;
+    const grid = document.getElementById('categoryGrid');
+    if (data.byCategory.length === 0) {
+      grid.innerHTML = '<div class="empty-state">No resolved data yet — check back soon</div>';
+    } else {
+      grid.innerHTML = data.byCategory.map(c => {
+        const wr = parseInt(c.winRate);
+        const cls = isNaN(wr) ? '' : wr >= 65 ? '' : wr >= 50 ? 'neutral' : 'cold';
+        return `<div class="cat-card">
+          <div class="cat-name">${c.category}</div>
+          <div class="cat-winrate ${cls}">${c.winRate === '—' ? '—' : c.winRate + '%'}</div>
+          <div class="cat-meta">${c.wins}W / ${c.resolved - c.wins}L — ${c.total} total</div>
+        </div>`;
+      }).join('');
+    }
+  } catch (err) {
+    console.error('Failed to load stats:', err);
+  }
+}
+
+async function loadSignals() {
+  try {
+    const res = await fetch('./signals.json?_=' + Date.now());
+    const data = await res.json();
+    document.getElementById('signalCount').textContent =
+      `Every prediction logged before resolution — wins and losses, nothing hidden. ${data.length} signals total.`;
+    const tbody = document.getElementById('signalsBody');
+    if (data.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state">No predictions yet. Every prediction will appear here automatically, win or lose.</div></td></tr>`;
+    } else {
+      tbody.innerHTML = data.map(s => {
+        const resultBadge = s.correct === true ? '<span class="badge win">✓ WIN</span>' : s.correct === false ? '<span class="badge loss">✗ LOSS</span>' : '<span class="badge pending">Pending</span>';
+        const trackBadge = s.track === 'rapid' ? '<span class="badge rapid">⚡ Rapid</span>' : '<span class="badge strategic">⚙️ Strategic</span>';
+        const pnl = parseFloat(s.pnl ?? 0);
+        const pnlStr = s.correct !== null ? `<span style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':''}$${Math.abs(pnl).toFixed(2)}</span>` : '—';
+        return `<tr>
+          <td style="white-space:nowrap;color:#888">${fmtDate(s.createdAt)}</td>
+          <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.title}</td>
+          <td class="${s.pick==='Yes'?'pick-yes':'pick-no'}">${s.pick}</td>
+          <td>${trackBadge}</td>
+          <td>${resultBadge}</td>
+          <td>${s.category}</td>
+          <td>${s.confidence}%</td>
+          <td>${pnlStr}</td>
+        </tr>`;
+      }).join('');
+    }
+  } catch (err) {
+    console.error('Failed to load signals:', err);
+  }
+}
+
+loadStats();
+loadLeaderboard();
+loadSignals();
+</script>
+</body>
+</html>
