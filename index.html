@@ -200,7 +200,7 @@ async function loadLeaderboard() {
       const wr = parseFloat(r.winRate ?? 0);
       const wrColor = wr >= 65 ? '#4ade80' : wr >= 50 ? '#facc15' : '#f87171';
       const pnl = parseFloat(r.pnl);
-      const pnlStr = `<span style="color:${pnl >= 0 ? '#4ade80' : '#f87171'}">${pnl >= 0 ? '+' : ''}$${Math.abs(pnl).toFixed(0)}</span>`;
+      const pnlStr = `<span style="color:${pnl >= 0 ? '#4ade80' : '#f87171'}">${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toFixed(0)}</span>`;
       const rankStr = hasWinRate ? `<b>#${rank}</b>` : '<span style="color:#444">—</span>';
       const wrStr = hasWinRate ? `<span style="color:${wrColor};font-weight:700">${r.winRate}%</span>` : '<span style="color:#444">—</span>';
       return `<tr>
@@ -234,7 +234,7 @@ async function loadStats() {
       <div class="stat-item"><div class="stat-number">${data.overview.winRate}%</div><div class="stat-label">Win Rate</div></div>
       <div class="stat-item"><div class="stat-number">${data.overview.resolved}</div><div class="stat-label">Resolved Picks</div></div>
       <div class="stat-item"><div class="stat-number">${data.overview.daysRunning}</div><div class="stat-label">Days Running</div></div>
-      <div class="stat-item"><div class="stat-number" style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':''}$${Math.abs(pnl).toFixed(0)}</div><div class="stat-label">Paper P&L</div></div>
+      <div class="stat-item"><div class="stat-number" style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':'-'}$${Math.abs(pnl).toFixed(0)}</div><div class="stat-label">Paper P&L</div></div>
     `;
     const s = data.strategic;
     const r = data.rapid;
@@ -248,7 +248,7 @@ async function loadStats() {
         <div class="track-stats">
           <div class="track-stat"><div class="track-stat-num">${s.total}</div><div class="track-stat-label">Total</div></div>
           <div class="track-stat"><div class="track-stat-num">${s.resolved}</div><div class="track-stat-label">Resolved</div></div>
-          <div class="track-stat"><div class="track-stat-num" style="color:${sPnl>=0?'#4ade80':'#f87171'}">${sPnl>=0?'+':''}$${Math.abs(sPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${sPnl>=0?'#4ade80':'#f87171'}">${sPnl>=0?'+':'-'}$${Math.abs(sPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
         </div>
       </div>
       <div class="track-card rapid">
@@ -258,7 +258,7 @@ async function loadStats() {
         <div class="track-stats">
           <div class="track-stat"><div class="track-stat-num">${r.total}</div><div class="track-stat-label">Total</div></div>
           <div class="track-stat"><div class="track-stat-num">${r.resolved}</div><div class="track-stat-label">Resolved</div></div>
-          <div class="track-stat"><div class="track-stat-num" style="color:${rPnl>=0?'#facc15':'#f87171'}">${rPnl>=0?'+':''}$${Math.abs(rPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${rPnl>=0?'#facc15':'#f87171'}">${rPnl>=0?'+':'-'}$${Math.abs(rPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
         </div>
       </div>
     `;
@@ -295,7 +295,7 @@ async function loadSignals() {
         const resultBadge = s.correct === true ? '<span class="badge win">✓ WIN</span>' : s.correct === false ? '<span class="badge loss">✗ LOSS</span>' : '<span class="badge pending">Pending</span>';
         const trackBadge = s.track === 'rapid' ? '<span class="badge rapid">⚡ Rapid</span>' : '<span class="badge strategic">⚙️ Strategic</span>';
         const pnl = parseFloat(s.pnl ?? 0);
-        const pnlStr = s.correct !== null ? `<span style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':''}$${Math.abs(pnl).toFixed(2)}</span>` : '—';
+        const pnlStr = s.correct !== null ? `<span style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':'-'}$${Math.abs(pnl).toFixed(2)}</span>` : '—';
         return `<tr>
           <td style="white-space:nowrap;color:#888">${fmtDate(s.createdAt)}</td>
           <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.title}</td>
