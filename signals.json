@@ -1,5 +1,31 @@
 [
   {
+    "title": "Will China invades Taiwan before GTA VI?",
+    "pick": "No",
+    "category": "geopolitics",
+    "track": "strategic",
+    "confidence": "78",
+    "edge": "19.5",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T06:45:03.169Z"
+  },
+  {
+    "title": "Opensea FDV above $1B one day after launch?",
+    "pick": "No",
+    "category": "business",
+    "track": "strategic",
+    "confidence": "90",
+    "edge": "-64.5",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T06:45:03.166Z"
+  },
+  {
     "title": "Will the Democratic Party win the NM-02 House seat?",
     "pick": "Yes",
     "category": "politics",

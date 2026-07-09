@@ -53,6 +53,19 @@
   },
   {
     "category": "business",
+    "total": 9,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 9,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "80",
+    "avgEdge": "-39.2",
+    "rank": -1
+  },
+  {
+    "category": "geopolitics",
     "total": 8,
     "wins": 0,
     "losses": 0,
@@ -60,21 +73,8 @@
     "pending": 8,
     "winRate": null,
     "pnl": "0.00",
-    "avgConfidence": "79",
-    "avgEdge": "-36.0",
-    "rank": -1
-  },
-  {
-    "category": "geopolitics",
-    "total": 7,
-    "wins": 0,
-    "losses": 0,
-    "resolved": 0,
-    "pending": 7,
-    "winRate": null,
-    "pnl": "0.00",
     "avgConfidence": "78",
-    "avgEdge": "15.0",
+    "avgEdge": "15.5",
     "rank": -1
   },
   {

@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 209,
+    "totalSignals": 211,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 182,
+    "pending": 184,
     "totalPnl": "-7902.17",
     "daysRunning": 5,
     "avgConfidence": "80",
-    "avgEdge": "15.5",
+    "avgEdge": "15.1",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 192,
+    "total": 194,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 180,
+    "pending": 182,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -61,14 +61,14 @@
     },
     {
       "category": "business",
-      "total": 8,
+      "total": 9,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
     },
     {
       "category": "geopolitics",
-      "total": 7,
+      "total": 8,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -117,6 +117,36 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will China invades Taiwan before GTA VI?",
+      "pick": "No",
+      "category": "geopolitics",
+      "track": "strategic",
+      "confidence": "78",
+      "edge": "19.5",
+      "marketProb": "50",
+      "modelProb": "30",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T06:45:03.169Z"
+    },
+    {
+      "title": "Opensea FDV above $1B one day after launch?",
+      "pick": "No",
+      "category": "business",
+      "track": "strategic",
+      "confidence": "90",
+      "edge": "-64.5",
+      "marketProb": "85",
+      "modelProb": "20",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T06:45:03.166Z"
+    },
     {
       "title": "Will the Democratic Party win the NM-02 House seat?",
       "pick": "Yes",
@@ -1586,37 +1616,7 @@
       "pnl": "2.51",
       "resolvedAt": "2026-07-05T22:45:09.648Z",
       "createdAt": "2026-07-05T19:45:07.427Z"
-    },
-    {
-      "title": "Casey Schmitt: Home Runs O/U 0.5",
-      "pick": "No",
-      "category": "rapid",
-      "track": "strategic",
-      "confidence": "88",
-      "edge": "21.5",
-      "marketProb": "25",
-      "modelProb": "3",
-      "correct": false,
-      "outcome": "incorrect",
-      "pnl": "-1.00",
-      "resolvedAt": "2026-07-05T23:30:12.974Z",
-      "createdAt": "2026-07-05T19:45:07.423Z"
-    },
-    {
-      "title": "Will Josh Tenorio win the 2026 Guam Governor Democratic primary election?",
-      "pick": "Yes",
-      "category": "politics",
-      "track": "strategic",
-      "confidence": "78",
-      "edge": "25.0",
-      "marketProb": "55",
-      "modelProb": "80",
-      "correct": null,
-      "outcome": null,
-      "pnl": "0.00",
-      "resolvedAt": null,
-      "createdAt": "2026-07-05T19:15:05.959Z"
     }
   ],
-  "generatedAt": "2026-07-09T06:00:00.948Z"
+  "generatedAt": "2026-07-09T07:00:00.240Z"
 }
