@@ -1,5 +1,31 @@
 [
   {
+    "title": "Will the Democratic Party win the NM-02 House seat?",
+    "pick": "Yes",
+    "category": "politics",
+    "track": "strategic",
+    "confidence": "78",
+    "edge": "43.5",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T05:15:14.923Z"
+  },
+  {
+    "title": "Will the Democratic Party win the NY-03 House seat?",
+    "pick": "Yes",
+    "category": "politics",
+    "track": "strategic",
+    "confidence": "85",
+    "edge": "65.5",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T05:15:14.921Z"
+  },
+  {
     "title": "Trump suspends U.S. entry for more countries by December 31, 2026?",
     "pick": "No",
     "category": "politics",

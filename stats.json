@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 207,
+    "totalSignals": 209,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 180,
+    "pending": 182,
     "totalPnl": "-7902.17",
     "daysRunning": 5,
     "avgConfidence": "80",
-    "avgEdge": "15.1",
+    "avgEdge": "15.5",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 190,
+    "total": 192,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 178,
+    "pending": 180,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -33,7 +33,7 @@
   "byCategory": [
     {
       "category": "politics",
-      "total": 110,
+      "total": 112,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -117,6 +117,36 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will the Democratic Party win the NM-02 House seat?",
+      "pick": "Yes",
+      "category": "politics",
+      "track": "strategic",
+      "confidence": "78",
+      "edge": "43.5",
+      "marketProb": "19",
+      "modelProb": "62",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T05:15:14.923Z"
+    },
+    {
+      "title": "Will the Democratic Party win the NY-03 House seat?",
+      "pick": "Yes",
+      "category": "politics",
+      "track": "strategic",
+      "confidence": "85",
+      "edge": "65.5",
+      "marketProb": "19",
+      "modelProb": "84",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T05:15:14.921Z"
+    },
     {
       "title": "Trump suspends U.S. entry for more countries by December 31, 2026?",
       "pick": "No",
@@ -1586,37 +1616,7 @@
       "pnl": "0.00",
       "resolvedAt": null,
       "createdAt": "2026-07-05T19:15:05.959Z"
-    },
-    {
-      "title": "Will the Republican Party win the MI-08 House seat?",
-      "pick": "No",
-      "category": "politics",
-      "track": "strategic",
-      "confidence": "90",
-      "edge": "76.5",
-      "marketProb": "87",
-      "modelProb": "10",
-      "correct": null,
-      "outcome": null,
-      "pnl": "0.00",
-      "resolvedAt": null,
-      "createdAt": "2026-07-05T18:15:03.084Z"
-    },
-    {
-      "title": "Javier Assad: Strikeouts O/U 2.5",
-      "pick": "Yes",
-      "category": "rapid",
-      "track": "strategic",
-      "confidence": "93",
-      "edge": "23.5",
-      "marketProb": "42",
-      "modelProb": "65",
-      "correct": false,
-      "outcome": "incorrect",
-      "pnl": "-1000.00",
-      "resolvedAt": "2026-07-05T21:45:07.173Z",
-      "createdAt": "2026-07-05T18:15:03.081Z"
     }
   ],
-  "generatedAt": "2026-07-09T05:08:14.352Z"
+  "generatedAt": "2026-07-09T06:00:00.832Z"
 }
