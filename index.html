@@ -3,34 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HQ Signals — Public Track Record</title>
-<meta name="description" content="AI-powered prediction market trading. Every signal logged before resolution — win or lose.">
+<title>HQ Signals — AI-Powered Prediction Market Signals</title>
+<meta name="description" content="12 AI agents scan 2,000+ prediction markets every 30 minutes. Every signal logged publicly before it resolves — win or lose. Radical transparency.">
+<meta property="og:title" content="HQ Signals — AI Prediction Market Signals">
+<meta property="og:description" content="Every pick logged publicly before resolution. Verified, auditable track record. Paper trading now, real capital April 2027.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0a0a">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh}
-.nav{padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1a1a1a;position:sticky;top:0;background:#0a0a0a;z-index:10}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.nav{padding:1.1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1a1a1a;position:sticky;top:0;background:rgba(10,10,10,.85);backdrop-filter:blur(10px);z-index:20}
 .logo{font-size:18px;font-weight:700;color:#fff;letter-spacing:-.5px}
 .logo span{color:#4ade80}
+.nav-links{display:flex;gap:1.5rem;align-items:center}
+.nav-links a.link{font-size:13px;color:#999;text-decoration:none}
+.nav-links a.link:hover{color:#e8e8e8}
 .nav-cta{background:#4ade80;color:#000;font-size:13px;font-weight:600;padding:8px 18px;border-radius:6px;text-decoration:none}
-.hero{padding:4rem 2rem 2rem;text-align:center;max-width:800px;margin:0 auto}
-.hero h1{font-size:42px;font-weight:700;letter-spacing:-1px;line-height:1.1;margin-bottom:1rem}
+.hero{padding:4.5rem 2rem 2rem;text-align:center;max-width:820px;margin:0 auto}
+.hero .eyebrow{display:inline-block;font-size:12px;font-weight:600;color:#4ade80;background:#0a2419;padding:5px 14px;border-radius:20px;letter-spacing:.04em;margin-bottom:1.5rem}
+.hero h1{font-size:44px;font-weight:700;letter-spacing:-1.2px;line-height:1.08;margin-bottom:1.1rem}
 .hero h1 span{color:#4ade80}
-.hero p{font-size:17px;color:#888;line-height:1.6;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+.hero p{font-size:17px;color:#8b8b8b;line-height:1.6;margin-bottom:2rem;max-width:620px;margin-left:auto;margin-right:auto}
 .hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-primary{background:#4ade80;color:#000;font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none}
+.btn-primary{background:#4ade80;color:#000;font-size:15px;font-weight:600;padding:14px 28px;border-radius:8px;text-decoration:none;transition:transform .1s}
+.btn-primary:hover{transform:translateY(-1px)}
 .btn-secondary{background:transparent;color:#e8e8e8;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;border:1px solid #333}
-.stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#1a1a1a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;margin:2rem 0}
+.btn-secondary:hover{border-color:#4ade80}
+.stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#1a1a1a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;margin:2.5rem 0 0}
 .stat-item{background:#0a0a0a;padding:1.5rem 2rem;text-align:center}
-.stat-number{font-size:36px;font-weight:700;color:#4ade80;letter-spacing:-1px}
+.stat-number{font-size:34px;font-weight:700;color:#4ade80;letter-spacing:-1px}
 .stat-label{font-size:12px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
-.section{padding:2rem 2rem;max-width:1100px;margin:0 auto}
-.section-title{font-size:22px;font-weight:600;margin-bottom:.5rem}
-.section-sub{font-size:14px;color:#666;margin-bottom:1.5rem}
+.transparency{max-width:900px;margin:2rem auto 0;padding:0 2rem}
+.transparency-inner{background:#0f130f;border:1px solid #1e2a1e;border-left:3px solid #4ade80;border-radius:10px;padding:1.1rem 1.3rem;font-size:13.5px;color:#a5b5a5;line-height:1.6}
+.transparency-inner b{color:#4ade80}
+.section{padding:2.75rem 2rem;max-width:1100px;margin:0 auto}
+.section-title{font-size:24px;font-weight:700;margin-bottom:.4rem;letter-spacing:-.5px}
+.section-sub{font-size:14px;color:#666;margin-bottom:1.75rem}
 .verified-badge{font-size:11px;font-weight:600;background:#0a2419;color:#4ade80;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-left:8px}
-.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2rem}
+/* How it works */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:1.5rem}
+.step-num{font-size:13px;font-weight:700;color:#4ade80;background:#0a2419;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
+.step h3{font-size:15px;font-weight:600;margin-bottom:.5rem}
+.step p{font-size:13.5px;color:#888;line-height:1.55}
+/* Track cards */
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:.5rem}
 .track-card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:1.5rem}
-.track-card.rapid{border-color:#facc15}
-.track-card.strategic{border-color:#4ade80}
+.track-card.rapid{border-color:#3a3418}
+.track-card.strategic{border-color:#183a2a}
 .track-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
 .track-card.rapid .track-label{color:#facc15}
 .track-card.strategic .track-label{color:#4ade80}
@@ -62,259 +84,286 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .badge.strategic{background:#0a2419;color:#4ade80}
 .pick-yes{color:#4ade80;font-weight:600}
 .pick-no{color:#f87171;font-weight:600}
-.footer{padding:2rem;text-align:center;border-top:1px solid #1a1a1a;color:#444;font-size:12px;margin-top:2rem}
-.footer .updated{color:#4ade80;margin-top:4px}
-.disclaimer{font-size:11px;color:#444;text-align:center;padding:1rem 2rem;max-width:800px;margin:0 auto}
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.price-card{background:#111;border:1px solid #1e1e1e;border-radius:14px;padding:1.6rem 1.4rem;display:flex;flex-direction:column;position:relative}
+.price-card.featured{border-color:#4ade80;box-shadow:0 0 0 1px #4ade80 inset}
+.price-tag-popular{position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:700;background:#4ade80;color:#000;padding:3px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em}
+.price-tier{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#4ade80;margin-bottom:.6rem}
+.price-amount{font-size:34px;font-weight:700;letter-spacing:-1px}
+.price-amount span{font-size:14px;color:#666;font-weight:500}
+.price-features{list-style:none;margin:1.2rem 0;flex:1}
+.price-features li{font-size:13px;color:#aaa;padding:.4rem 0;padding-left:1.4rem;position:relative;line-height:1.4}
+.price-features li:before{content:"✓";position:absolute;left:0;color:#4ade80;font-weight:700}
+.price-features li.off{color:#555}
+.price-features li.off:before{content:"—";color:#333}
+.price-btn{background:#1a1a1a;color:#e8e8e8;border:1px solid #333;font-size:14px;font-weight:600;padding:12px;border-radius:8px;text-decoration:none;text-align:center;display:block;transition:all .1s}
+.price-btn:hover{border-color:#4ade80}
+.price-card.featured .price-btn{background:#4ade80;color:#000;border-color:#4ade80}
+.footer{padding:2.5rem 2rem;text-align:center;border-top:1px solid #1a1a1a;color:#555;font-size:13px;margin-top:1rem}
+.footer a{color:#4ade80;text-decoration:none}
+.footer .updated{color:#4ade80;margin-top:8px;font-size:12px}
+.disclaimer{font-size:11px;color:#444;text-align:center;padding:1.5rem 2rem 0;max-width:800px;margin:0 auto;line-height:1.6}
 .empty-state{color:#555;padding:2rem;text-align:center;font-size:13px;background:#111;border-radius:10px;border:1px solid #1e1e1e}
 .loading{color:#555;font-style:italic}
-@media(max-width:600px){.track-grid{grid-template-columns:1fr}.track-stats{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){
+  .hero{padding:3rem 1.25rem 1.5rem}
+  .hero h1{font-size:32px}
+  .hero p{font-size:15px}
+  .section{padding:2rem 1.25rem}
+  .section-title{font-size:20px}
+  .nav{padding:1rem 1.25rem}
+  .nav-links a.link{display:none}
+  .stat-number{font-size:28px}
+  .track-grid{grid-template-columns:1fr}
+  .track-stats{grid-template-columns:1fr 1fr 1fr}
+}
 </style>
 </head>
 <body>
 
 <nav class="nav">
   <div class="logo">HQ<span>Signals</span></div>
-  <a href="https://whop.com/hq-signals-c939/" class="nav-cta" target="_blank">Get Access</a>
+  <div class="nav-links">
+    <a href="#how" class="link">How it works</a>
+    <a href="#track" class="link">Track record</a>
+    <a href="#pricing" class="link">Pricing</a>
+    <a href="https://whop.com/hq-signals-c939/" class="nav-cta" target="_blank" rel="noopener">Get Access</a>
+  </div>
 </nav>
 
 <div class="hero">
-  <h1>AI-Powered<br><span>Prediction Markets</span></h1>
-  <p>12 specialized AI agents analyze 2,000+ markets every 30 minutes. High-confidence signals with Kelly Criterion bet sizing — every pick logged publicly before it resolves.</p>
+  <div class="eyebrow">● Radically transparent — every pick logged before it resolves</div>
+  <h1>AI signals for<br><span>prediction markets</span></h1>
+  <p>12 specialized AI agents analyze 2,000+ Polymarket markets every 30 minutes. High-confidence picks with Kelly Criterion bet sizing — delivered to Telegram &amp; Discord, and logged publicly here before they resolve. Win or lose, nothing is hidden.</p>
   <div class="hero-cta">
-    <a href="#paper-trading" class="btn-primary">View Track Record</a>
-    <a href="https://whop.com/hq-signals-c939/" class="btn-secondary" target="_blank">Get Access</a>
+    <a href="https://whop.com/hq-signals-c939/" class="btn-primary" target="_blank" rel="noopener">Get Access</a>
+    <a href="#track" class="btn-secondary">See the track record</a>
   </div>
 </div>
 
 <div class="stats-bar" id="statsBar">
-  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Win Rate</div></div>
-  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Resolved Picks</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Signals Logged</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Resolved</div></div>
   <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Days Running</div></div>
-  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Paper P&L</div></div>
+  <div class="stat-item"><div class="stat-number loading">—</div><div class="stat-label">Avg Confidence</div></div>
 </div>
 
-<div class="section">
-  <div class="section-title">Signal Tracks</div>
-  <div class="section-sub">Strategic signals run every 30 minutes. Rapid signals target same-day markets.</div>
+<div class="transparency">
+  <div class="transparency-inner">
+    <b>We're in the open paper-trading phase.</b> HQ Signals has been publishing since July 2026; real capital goes live <b>April 29, 2027</b>. Until then, every single signal is recorded here <b>before</b> it resolves — building a verified, auditable track record with zero cherry-picking. The sample is still young (and the early P&amp;L reflects that), which is exactly why we log everything in public.
+  </div>
+</div>
+
+<div class="section" id="how">
+  <div class="section-title">How it works</div>
+  <div class="section-sub">A disciplined, repeatable process — not gut calls.</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Scan</h3>
+      <p>12 AI agents continuously monitor 2,000+ prediction markets across politics, crypto, sports, tech and more — every 30 minutes.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Score</h3>
+      <p>Each candidate is scored on statistical edge, whale positioning, momentum and news — only high-conviction picks (70%+) survive.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Size</h3>
+      <p>Kelly Criterion sets a disciplined bet size for every signal, so position sizing is systematic rather than emotional.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Deliver &amp; log</h3>
+      <p>Signals hit your Telegram &amp; Discord instantly — and are logged on this page before resolution. You see the outcome we do.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="track">
+  <div class="section-title">Live track record <span class="verified-badge">Verified</span></div>
+  <div class="section-sub">Auto-published hourly from the trading database. Strategic signals run every 30 minutes; rapid signals target same-day markets.</div>
   <div class="track-grid" id="trackGrid">
-    <div class="track-card strategic">
-      <div class="track-label">⚙️ Strategic</div>
-      <div class="track-winrate loading">—</div>
-      <div class="track-meta loading">Loading...</div>
-      <div class="track-stats">
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div>
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div>
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&L</div></div>
-      </div>
-    </div>
-    <div class="track-card rapid">
-      <div class="track-label">⚡ Rapid</div>
-      <div class="track-winrate loading">—</div>
-      <div class="track-meta loading">Loading...</div>
-      <div class="track-stats">
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div>
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div>
-        <div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&L</div></div>
-      </div>
-    </div>
+    <div class="track-card strategic"><div class="track-label">⚙️ Strategic</div><div class="track-winrate loading">—</div><div class="track-meta loading">Loading…</div><div class="track-stats"><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&amp;L</div></div></div></div>
+    <div class="track-card rapid"><div class="track-label">⚡ Rapid</div><div class="track-winrate loading">—</div><div class="track-meta loading">Loading…</div><div class="track-stats"><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Total</div></div><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">Resolved</div></div><div class="track-stat"><div class="track-stat-num loading">—</div><div class="track-stat-label">P&amp;L</div></div></div></div>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">Category Leaderboard</div>
-  <div class="section-sub">Ranked by win rate — minimum 3 resolved picks to qualify</div>
-  <div style="overflow-x:auto">
-    <table class="signals-table">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Category</th>
-          <th>Win Rate</th>
-          <th>Record</th>
-          <th>Pending</th>
-          <th>P&L</th>
-          <th>Avg Edge</th>
-        </tr>
-      </thead>
-      <tbody id="leaderboardBody"><tr><td colspan="7" class="loading" style="padding:1rem">Loading...</td></tr></tbody>
-    </table>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Performance by Category</div>
+  <div class="section-title">Performance by category</div>
   <div class="section-sub">Win rate across all resolved signals</div>
-  <div class="category-grid" id="categoryGrid"><div class="loading">Loading...</div></div>
+  <div class="category-grid" id="categoryGrid"><div class="loading">Loading…</div></div>
 </div>
 
-<div class="section" id="paper-trading">
-  <div class="section-title">Full Signal Log <span class="verified-badge">Verified</span></div>
-  <div class="section-sub" id="signalCount">Every prediction logged before resolution — wins and losses, nothing hidden.</div>
+<div class="section">
+  <div class="section-title">Full signal log <span class="verified-badge">Nothing hidden</span></div>
+  <div class="section-sub" id="signalCount">Every prediction logged before resolution — wins and losses.</div>
   <div class="table-wrap">
     <table class="signals-table">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Market</th>
-          <th>Pick</th>
-          <th>Track</th>
-          <th>Result</th>
-          <th>Category</th>
-          <th>Confidence</th>
-          <th>P&L</th>
-        </tr>
-      </thead>
-      <tbody id="signalsBody"><tr><td colspan="8" class="loading" style="padding:1rem">Loading...</td></tr></tbody>
+      <thead><tr><th>Date</th><th>Market</th><th>Pick</th><th>Track</th><th>Result</th><th>Category</th><th>Conf.</th><th>P&amp;L</th></tr></thead>
+      <tbody id="signalsBody"><tr><td colspan="8" class="loading" style="padding:1rem">Loading…</td></tr></tbody>
     </table>
+  </div>
+</div>
+
+<div class="section" id="pricing">
+  <div class="section-title">Choose your access</div>
+  <div class="section-sub">Cancel anytime. Discord roles are assigned automatically on subscribe.</div>
+  <!-- ============================================================
+       EDIT ME: replace the $XX prices and the href on each button
+       with your real Whop product URLs. All buttons currently point
+       to the base store: https://whop.com/hq-signals-c939/
+       ============================================================ -->
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-tier">Standard</div>
+      <div class="price-amount">$29<span>/mo</span></div>
+      <ul class="price-features">
+        <li>Core strategic signals</li>
+        <li>Telegram + Discord #standard</li>
+        <li>Public track record access</li>
+        <li class="off">Rapid same-day signals</li>
+        <li class="off">Odds-spike &amp; whale alerts</li>
+      </ul>
+      <a href="https://whop.com/hq-signals-c939/" class="price-btn" target="_blank" rel="noopener">Get Standard</a>
+    </div>
+    <div class="price-card featured">
+      <div class="price-tag-popular">Most popular</div>
+      <div class="price-tier">Pro</div>
+      <div class="price-amount">$79<span>/mo</span></div>
+      <ul class="price-features">
+        <li>Everything in Standard</li>
+        <li>Rapid same-day signals</li>
+        <li>Odds-spike alerts</li>
+        <li>Discord #pro channel</li>
+        <li class="off">Whale wallet alerts</li>
+      </ul>
+      <a href="https://whop.com/hq-signals-c939/" class="price-btn" target="_blank" rel="noopener">Get Pro</a>
+    </div>
+    <div class="price-card">
+      <div class="price-tier">Elite</div>
+      <div class="price-amount">$149<span>/mo</span></div>
+      <ul class="price-features">
+        <li>Everything in Pro</li>
+        <li>Whale wallet alerts</li>
+        <li>Priority signal delivery</li>
+        <li>Discord #elite channel</li>
+        <li class="off">Insider deep-dives</li>
+      </ul>
+      <a href="https://whop.com/hq-signals-c939/" class="price-btn" target="_blank" rel="noopener">Get Elite</a>
+    </div>
+    <div class="price-card">
+      <div class="price-tier">Insider</div>
+      <div class="price-amount">$299<span>/mo</span></div>
+      <ul class="price-features">
+        <li>Everything in Elite</li>
+        <li>Insider deep-dives</li>
+        <li>Full whale-wallet tracking</li>
+        <li>Discord #insider channel</li>
+        <li>Direct line to the desk</li>
+      </ul>
+      <a href="https://whop.com/hq-signals-c939/" class="price-btn" target="_blank" rel="noopener">Get Insider</a>
+    </div>
   </div>
 </div>
 
 <div class="disclaimer">
-  ⚠️ Prediction market trading involves risk. Past performance does not guarantee future results. Paper trading P&L is simulated and does not represent actual trading results. This is not financial advice.
+  ⚠️ Prediction market trading involves risk. Past performance does not guarantee future results. Paper-trading P&amp;L shown here is simulated and does not represent actual trading results. This is not financial advice.
 </div>
 
 <div class="footer">
-  © 2026 HQ Signals — AI-Powered Prediction Market Intelligence
+  © 2026 HQ Signals — AI-Powered Prediction Market Intelligence · <a href="https://whop.com/hq-signals-c939/" target="_blank" rel="noopener">Join on Whop</a>
   <div class="updated" id="lastUpdated"></div>
 </div>
 
 <script>
-function fmtDate(iso) {
-  if (!iso) return '—';
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' });
-}
+function fmtDate(iso){ if(!iso) return '—'; return new Date(iso).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'2-digit'}); }
 
-async function loadLeaderboard() {
-  try {
-    const res = await fetch('./leaderboard.json?_=' + Date.now());
-    const data = await res.json();
-    const tbody = document.getElementById('leaderboardBody');
-    if (!data.length) {
-      tbody.innerHTML = '<tr><td colspan="7"><div class="empty-state">No resolved data yet — check back as markets resolve.</div></td></tr>';
-      return;
-    }
-    let rank = 0;
-    tbody.innerHTML = data.map(r => {
-      const hasWinRate = r.winRate !== null;
-      if (hasWinRate) rank++;
-      const wr = parseFloat(r.winRate ?? 0);
-      const wrColor = wr >= 65 ? '#4ade80' : wr >= 50 ? '#facc15' : '#f87171';
-      const pnl = parseFloat(r.pnl);
-      const pnlStr = `<span style="color:${pnl >= 0 ? '#4ade80' : '#f87171'}">${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toFixed(0)}</span>`;
-      const rankStr = hasWinRate ? `<b>#${rank}</b>` : '<span style="color:#444">—</span>';
-      const wrStr = hasWinRate ? `<span style="color:${wrColor};font-weight:700">${r.winRate}%</span>` : '<span style="color:#444">—</span>';
-      return `<tr>
-        <td>${rankStr}</td>
-        <td><b>${r.category}</b></td>
-        <td>${wrStr}</td>
-        <td>${r.wins}W / ${r.losses}L</td>
-        <td style="color:#666">${r.pending}</td>
-        <td>${pnlStr}</td>
-        <td style="color:#888">${r.avgEdge ? r.avgEdge + 'pts' : '—'}</td>
-      </tr>`;
-    }).join('');
-  } catch (err) {
-    console.error('Leaderboard failed:', err);
-  }
-}
-
-async function loadStats() {
-  try {
+async function loadStats(){
+  try{
     const res = await fetch('./stats.json?_=' + Date.now());
     const data = await res.json();
-
-    if (data.generatedAt) {
+    if(data.generatedAt){
       document.getElementById('lastUpdated').textContent =
-        `Data updates hourly — last updated ${new Date(data.generatedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`;
+        `Data updates hourly — last updated ${new Date(data.generatedAt).toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'})}`;
     }
+    const o = data.overview;
+    document.getElementById('statsBar').innerHTML = `
+      <div class="stat-item"><div class="stat-number">${o.totalSignals}</div><div class="stat-label">Signals Logged</div></div>
+      <div class="stat-item"><div class="stat-number">${o.resolved}</div><div class="stat-label">Resolved</div></div>
+      <div class="stat-item"><div class="stat-number">${o.daysRunning}</div><div class="stat-label">Days Running</div></div>
+      <div class="stat-item"><div class="stat-number">${o.avgConfidence}%</div><div class="stat-label">Avg Confidence</div></div>`;
 
-    const statsBar = document.getElementById('statsBar');
-    const pnl = parseFloat(data.overview.totalPnl);
-    statsBar.innerHTML = `
-      <div class="stat-item"><div class="stat-number">${data.overview.winRate}%</div><div class="stat-label">Win Rate</div></div>
-      <div class="stat-item"><div class="stat-number">${data.overview.resolved}</div><div class="stat-label">Resolved Picks</div></div>
-      <div class="stat-item"><div class="stat-number">${data.overview.daysRunning}</div><div class="stat-label">Days Running</div></div>
-      <div class="stat-item"><div class="stat-number" style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':'-'}$${Math.abs(pnl).toFixed(0)}</div><div class="stat-label">Paper P&L</div></div>
-    `;
-    const s = data.strategic;
-    const r = data.rapid;
-    const sPnl = parseFloat(s.totalPnl);
-    const rPnl = parseFloat(r.totalPnl);
+    const s = data.strategic, r = data.rapid;
+    const sPnl = parseFloat(s.totalPnl), rPnl = parseFloat(r.totalPnl);
     document.getElementById('trackGrid').innerHTML = `
       <div class="track-card strategic">
         <div class="track-label">⚙️ Strategic</div>
-        <div class="track-winrate">${s.resolved > 0 ? s.winRate + '%' : '—'}</div>
+        <div class="track-winrate">${s.resolved>0 ? s.winRate+'%' : '—'}</div>
         <div class="track-meta">${s.wins}W / ${s.losses}L — ${s.pending} pending</div>
         <div class="track-stats">
           <div class="track-stat"><div class="track-stat-num">${s.total}</div><div class="track-stat-label">Total</div></div>
           <div class="track-stat"><div class="track-stat-num">${s.resolved}</div><div class="track-stat-label">Resolved</div></div>
-          <div class="track-stat"><div class="track-stat-num" style="color:${sPnl>=0?'#4ade80':'#f87171'}">${sPnl>=0?'+':'-'}$${Math.abs(sPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${sPnl>=0?'#4ade80':'#f87171'}">${sPnl>=0?'+':'-'}$${Math.abs(sPnl).toFixed(0)}</div><div class="track-stat-label">P&amp;L</div></div>
         </div>
       </div>
       <div class="track-card rapid">
         <div class="track-label">⚡ Rapid</div>
-        <div class="track-winrate">${r.resolved > 0 ? r.winRate + '%' : '—'}</div>
+        <div class="track-winrate">${r.resolved>0 ? r.winRate+'%' : '—'}</div>
         <div class="track-meta">${r.wins}W / ${r.losses}L — ${r.pending} pending</div>
         <div class="track-stats">
           <div class="track-stat"><div class="track-stat-num">${r.total}</div><div class="track-stat-label">Total</div></div>
           <div class="track-stat"><div class="track-stat-num">${r.resolved}</div><div class="track-stat-label">Resolved</div></div>
-          <div class="track-stat"><div class="track-stat-num" style="color:${rPnl>=0?'#facc15':'#f87171'}">${rPnl>=0?'+':'-'}$${Math.abs(rPnl).toFixed(0)}</div><div class="track-stat-label">P&L</div></div>
+          <div class="track-stat"><div class="track-stat-num" style="color:${rPnl>=0?'#facc15':'#f87171'}">${rPnl>=0?'+':'-'}$${Math.abs(rPnl).toFixed(0)}</div><div class="track-stat-label">P&amp;L</div></div>
         </div>
-      </div>
-    `;
+      </div>`;
+
     const grid = document.getElementById('categoryGrid');
-    if (data.byCategory.length === 0) {
+    if(!data.byCategory || data.byCategory.length===0){
       grid.innerHTML = '<div class="empty-state">No resolved data yet — check back soon</div>';
     } else {
-      grid.innerHTML = data.byCategory.map(c => {
+      grid.innerHTML = data.byCategory.map(c=>{
         const wr = parseInt(c.winRate);
-        const cls = isNaN(wr) ? '' : wr >= 65 ? '' : wr >= 50 ? 'neutral' : 'cold';
-        return `<div class="cat-card">
-          <div class="cat-name">${c.category}</div>
-          <div class="cat-winrate ${cls}">${c.winRate === '—' ? '—' : c.winRate + '%'}</div>
-          <div class="cat-meta">${c.wins}W / ${c.resolved - c.wins}L — ${c.total} total</div>
-        </div>`;
+        const cls = isNaN(wr) ? '' : wr>=65 ? '' : wr>=50 ? 'neutral' : 'cold';
+        return `<div class="cat-card"><div class="cat-name">${c.category}</div><div class="cat-winrate ${cls}">${c.winRate==='—'?'—':c.winRate+'%'}</div><div class="cat-meta">${c.wins}W / ${c.resolved-c.wins}L — ${c.total} total</div></div>`;
       }).join('');
     }
-  } catch (err) {
-    console.error('Failed to load stats:', err);
-  }
+  }catch(err){ console.error('Failed to load stats:',err); }
 }
 
-async function loadSignals() {
-  try {
+async function loadSignals(){
+  try{
     const res = await fetch('./signals.json?_=' + Date.now());
     const data = await res.json();
     document.getElementById('signalCount').textContent =
-      `Every prediction logged before resolution — wins and losses, nothing hidden. ${data.length} signals total.`;
+      `Every prediction logged before resolution — wins and losses. ${data.length} signals total.`;
     const tbody = document.getElementById('signalsBody');
-    if (data.length === 0) {
+    if(data.length===0){
       tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state">No predictions yet. Every prediction will appear here automatically, win or lose.</div></td></tr>`;
-    } else {
-      tbody.innerHTML = data.map(s => {
-        const resultBadge = s.correct === true ? '<span class="badge win">✓ WIN</span>' : s.correct === false ? '<span class="badge loss">✗ LOSS</span>' : '<span class="badge pending">Pending</span>';
-        const trackBadge = s.track === 'rapid' ? '<span class="badge rapid">⚡ Rapid</span>' : '<span class="badge strategic">⚙️ Strategic</span>';
-        const pnl = parseFloat(s.pnl ?? 0);
-        const pnlStr = s.correct !== null ? `<span style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':'-'}$${Math.abs(pnl).toFixed(2)}</span>` : '—';
-        return `<tr>
-          <td style="white-space:nowrap;color:#888">${fmtDate(s.createdAt)}</td>
-          <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.title}</td>
-          <td class="${s.pick==='Yes'?'pick-yes':'pick-no'}">${s.pick}</td>
-          <td>${trackBadge}</td>
-          <td>${resultBadge}</td>
-          <td>${s.category}</td>
-          <td>${s.confidence}%</td>
-          <td>${pnlStr}</td>
-        </tr>`;
-      }).join('');
+      return;
     }
-  } catch (err) {
-    console.error('Failed to load signals:', err);
-  }
+    tbody.innerHTML = data.map(s=>{
+      const resultBadge = s.correct===true ? '<span class="badge win">✓ WIN</span>' : s.correct===false ? '<span class="badge loss">✗ LOSS</span>' : '<span class="badge pending">Pending</span>';
+      const trackBadge = s.track==='rapid' ? '<span class="badge rapid">⚡ Rapid</span>' : '<span class="badge strategic">⚙️ Strategic</span>';
+      const pnl = parseFloat(s.pnl ?? 0);
+      const pnlStr = s.correct!==null ? `<span style="color:${pnl>=0?'#4ade80':'#f87171'}">${pnl>=0?'+':'-'}$${Math.abs(pnl).toFixed(2)}</span>` : '—';
+      return `<tr>
+        <td style="white-space:nowrap;color:#888">${fmtDate(s.createdAt)}</td>
+        <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.title}</td>
+        <td class="${s.pick==='Yes'?'pick-yes':'pick-no'}">${s.pick}</td>
+        <td>${trackBadge}</td>
+        <td>${resultBadge}</td>
+        <td>${s.category}</td>
+        <td>${s.confidence}%</td>
+        <td>${pnlStr}</td>
+      </tr>`;
+    }).join('');
+  }catch(err){ console.error('Failed to load signals:',err); }
 }
 
 loadStats();
-loadLeaderboard();
 loadSignals();
 </script>
 </body>
