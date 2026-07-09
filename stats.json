@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 206,
+    "totalSignals": 207,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 179,
+    "pending": 180,
     "totalPnl": "-7902.17",
     "daysRunning": 5,
     "avgConfidence": "80",
-    "avgEdge": "15.3",
+    "avgEdge": "15.1",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 189,
+    "total": 190,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 177,
+    "pending": 178,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -33,7 +33,7 @@
   "byCategory": [
     {
       "category": "politics",
-      "total": 109,
+      "total": 110,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -117,6 +117,21 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Trump suspends U.S. entry for more countries by December 31, 2026?",
+      "pick": "No",
+      "category": "politics",
+      "track": "strategic",
+      "confidence": "75",
+      "edge": "-16.5",
+      "marketProb": "47",
+      "modelProb": "30",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T04:45:13.812Z"
+    },
     {
       "title": "Will the Republican Party win the NY-03 House seat?",
       "pick": "No",
@@ -1601,22 +1616,7 @@
       "pnl": "-1000.00",
       "resolvedAt": "2026-07-05T21:45:07.173Z",
       "createdAt": "2026-07-05T18:15:03.081Z"
-    },
-    {
-      "title": "Will the Democratic Party win the CT-05 House seat?",
-      "pick": "Yes",
-      "category": "politics",
-      "track": "strategic",
-      "confidence": "80",
-      "edge": "84.0",
-      "marketProb": "6",
-      "modelProb": "90",
-      "correct": null,
-      "outcome": null,
-      "pnl": "0.00",
-      "resolvedAt": null,
-      "createdAt": "2026-07-05T17:15:14.974Z"
     }
   ],
-  "generatedAt": "2026-07-09T04:00:00.556Z"
+  "generatedAt": "2026-07-09T05:00:00.263Z"
 }

@@ -14,15 +14,15 @@
   },
   {
     "category": "politics",
-    "total": 109,
+    "total": 110,
     "wins": 0,
     "losses": 0,
     "resolved": 0,
-    "pending": 109,
+    "pending": 110,
     "winRate": null,
     "pnl": "0.00",
     "avgConfidence": "80",
-    "avgEdge": "14.1",
+    "avgEdge": "13.8",
     "rank": -1
   },
   {
