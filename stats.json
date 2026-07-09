@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 211,
+    "totalSignals": 214,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 184,
+    "pending": 187,
     "totalPnl": "-7902.17",
-    "daysRunning": 5,
+    "daysRunning": 6,
     "avgConfidence": "80",
-    "avgEdge": "15.1",
+    "avgEdge": "14.6",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 194,
+    "total": 197,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 182,
+    "pending": 185,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -47,7 +47,7 @@
     },
     {
       "category": "pop_culture",
-      "total": 17,
+      "total": 18,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -75,14 +75,14 @@
     },
     {
       "category": "economics",
-      "total": 5,
+      "total": 6,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
     },
     {
       "category": "tech",
-      "total": 5,
+      "total": 6,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -117,6 +117,51 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will OpenAI launch a new consumer hardware product by December 31, 2026?",
+      "pick": "No",
+      "category": "economics",
+      "track": "strategic",
+      "confidence": "78",
+      "edge": "-39.0",
+      "marketProb": "69",
+      "modelProb": "30",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T07:15:04.161Z"
+    },
+    {
+      "title": "SpaceX Starship fully reusable before 2027?",
+      "pick": "Yes",
+      "category": "tech",
+      "track": "strategic",
+      "confidence": "80",
+      "edge": "18.5",
+      "marketProb": "52",
+      "modelProb": "70",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T07:15:04.160Z"
+    },
+    {
+      "title": "Will Frank Ocean release a new song in 2026?",
+      "pick": "No",
+      "category": "pop_culture",
+      "track": "strategic",
+      "confidence": "78",
+      "edge": "-35.0",
+      "marketProb": "75",
+      "modelProb": "40",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-09T07:15:04.140Z"
+    },
     {
       "title": "Will China invades Taiwan before GTA VI?",
       "pick": "No",
@@ -1571,52 +1616,7 @@
       "pnl": "0.00",
       "resolvedAt": null,
       "createdAt": "2026-07-05T20:15:08.975Z"
-    },
-    {
-      "title": "Eduardo Rodriguez: Strikeouts O/U 4.5",
-      "pick": "Yes",
-      "category": "rapid",
-      "track": "strategic",
-      "confidence": "90",
-      "edge": "65.0",
-      "marketProb": "25",
-      "modelProb": "90",
-      "correct": false,
-      "outcome": "incorrect",
-      "pnl": "-1000.00",
-      "resolvedAt": "2026-07-05T23:30:12.014Z",
-      "createdAt": "2026-07-05T19:45:07.428Z"
-    },
-    {
-      "title": "Will the Republican Party win the MT-01 House seat?",
-      "pick": "No",
-      "category": "politics",
-      "track": "strategic",
-      "confidence": "78",
-      "edge": "-16.5",
-      "marketProb": "28",
-      "modelProb": "12",
-      "correct": null,
-      "outcome": null,
-      "pnl": "0.00",
-      "resolvedAt": null,
-      "createdAt": "2026-07-05T19:45:07.428Z"
-    },
-    {
-      "title": "Antonio Nusa: 4+ goals + assists",
-      "pick": "No",
-      "category": "rapid",
-      "track": "strategic",
-      "confidence": "90",
-      "edge": "23.5",
-      "marketProb": "28",
-      "modelProb": "5",
-      "correct": true,
-      "outcome": "correct",
-      "pnl": "2.51",
-      "resolvedAt": "2026-07-05T22:45:09.648Z",
-      "createdAt": "2026-07-05T19:45:07.427Z"
     }
   ],
-  "generatedAt": "2026-07-09T07:00:00.884Z"
+  "generatedAt": "2026-07-09T16:00:00.577Z"
 }

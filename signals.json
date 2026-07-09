@@ -1,5 +1,44 @@
 [
   {
+    "title": "Will OpenAI launch a new consumer hardware product by December 31, 2026?",
+    "pick": "No",
+    "category": "economics",
+    "track": "strategic",
+    "confidence": "78",
+    "edge": "-39.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T07:15:04.161Z"
+  },
+  {
+    "title": "SpaceX Starship fully reusable before 2027?",
+    "pick": "Yes",
+    "category": "tech",
+    "track": "strategic",
+    "confidence": "80",
+    "edge": "18.5",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T07:15:04.160Z"
+  },
+  {
+    "title": "Will Frank Ocean release a new song in 2026?",
+    "pick": "No",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "78",
+    "edge": "-35.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-09T07:15:04.140Z"
+  },
+  {
     "title": "Will China invades Taiwan before GTA VI?",
     "pick": "No",
     "category": "geopolitics",

@@ -27,15 +27,15 @@
   },
   {
     "category": "pop_culture",
-    "total": 17,
+    "total": 18,
     "wins": 0,
     "losses": 0,
     "resolved": 0,
-    "pending": 17,
+    "pending": 18,
     "winRate": null,
     "pnl": "0.00",
     "avgConfidence": "79",
-    "avgEdge": "20.8",
+    "avgEdge": "17.7",
     "rank": -1
   },
   {
@@ -79,28 +79,28 @@
   },
   {
     "category": "economics",
-    "total": 5,
+    "total": 6,
     "wins": 0,
     "losses": 0,
     "resolved": 0,
-    "pending": 5,
+    "pending": 6,
     "winRate": null,
     "pnl": "0.00",
     "avgConfidence": "78",
-    "avgEdge": "20.3",
+    "avgEdge": "10.4",
     "rank": -1
   },
   {
     "category": "tech",
-    "total": 5,
+    "total": 6,
     "wins": 0,
     "losses": 0,
     "resolved": 0,
-    "pending": 5,
+    "pending": 6,
     "winRate": null,
     "pnl": "0.00",
     "avgConfidence": "78",
-    "avgEdge": "19.4",
+    "avgEdge": "19.3",
     "rank": -1
   },
   {
