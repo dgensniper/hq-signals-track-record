@@ -1,5 +1,31 @@
 [
   {
+    "title": "Will Apple release iPhone 18 in 2026?",
+    "pick": "Yes",
+    "category": "tech",
+    "track": "strategic",
+    "confidence": "87",
+    "edge": "81.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-10T20:45:11.884Z"
+  },
+  {
+    "title": "Will less than 5 SpaceX Starship launches successfully reach Space in 2026?",
+    "pick": "Yes",
+    "category": "business",
+    "track": "strategic",
+    "confidence": "83",
+    "edge": "13.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-10T20:15:11.173Z"
+  },
+  {
     "title": "Bitcoin above 62,200 on July 6, 5PM ET?",
     "pick": "No",
     "category": "rapid",

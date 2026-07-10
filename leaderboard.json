@@ -11,5 +11,31 @@
     "avgConfidence": "84",
     "avgEdge": "24.2",
     "rank": 18.5
+  },
+  {
+    "category": "tech",
+    "total": 1,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 1,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "87",
+    "avgEdge": "81.0",
+    "rank": -1
+  },
+  {
+    "category": "business",
+    "total": 1,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 1,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "83",
+    "avgEdge": "13.0",
+    "rank": -1
   }
 ]
