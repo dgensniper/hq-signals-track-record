@@ -14,6 +14,19 @@
   },
   {
     "category": "pop_culture",
+    "total": 4,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 4,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "85",
+    "avgEdge": "-8.3",
+    "rank": -1
+  },
+  {
+    "category": "geopolitics",
     "total": 3,
     "wins": 0,
     "losses": 0,
@@ -21,8 +34,8 @@
     "pending": 3,
     "winRate": null,
     "pnl": "0.00",
-    "avgConfidence": "85",
-    "avgEdge": "-37.6",
+    "avgConfidence": "86",
+    "avgEdge": "-89.0",
     "rank": -1
   },
   {

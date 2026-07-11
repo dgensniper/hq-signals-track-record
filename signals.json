@@ -1,5 +1,57 @@
 [
   {
+    "title": "Will Maria Fernanda Espinosa Garcés be the next Secretary General of the United Nations?",
+    "pick": "No",
+    "category": "geopolitics",
+    "track": "strategic",
+    "confidence": "85",
+    "edge": "-88.3",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T01:15:13.458Z"
+  },
+  {
+    "title": "Will Amina Mohammed be the next Secretary General of the United Nations?",
+    "pick": "No",
+    "category": "geopolitics",
+    "track": "strategic",
+    "confidence": "87",
+    "edge": "-88.9",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T01:15:13.458Z"
+  },
+  {
+    "title": "Will David Choquehuanca be the next Secretary General of the United Nations?",
+    "pick": "No",
+    "category": "geopolitics",
+    "track": "strategic",
+    "confidence": "88",
+    "edge": "-89.8",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T01:15:13.457Z"
+  },
+  {
+    "title": "Will Andrew Tate attend Taylor Swift's wedding?",
+    "pick": "No",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "85",
+    "edge": "79.7",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T01:15:13.454Z"
+  },
+  {
     "title": "Will Brittany Mahomes attend Taylor Swift's wedding?",
     "pick": "No",
     "category": "pop_culture",

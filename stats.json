@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 33,
+    "totalSignals": 37,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 6,
+    "pending": 10,
     "totalPnl": "-7902.17",
     "daysRunning": 7,
     "avgConfidence": "84",
-    "avgEdge": "21.7",
+    "avgEdge": "14.3",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 18,
+    "total": 22,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 6,
+    "pending": 10,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -40,6 +40,13 @@
     },
     {
       "category": "pop_culture",
+      "total": 4,
+      "wins": 0,
+      "resolved": 0,
+      "winRate": "—"
+    },
+    {
+      "category": "geopolitics",
       "total": 3,
       "wins": 0,
       "resolved": 0,
@@ -68,6 +75,66 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will Maria Fernanda Espinosa Garcés be the next Secretary General of the United Nations?",
+      "pick": "No",
+      "category": "geopolitics",
+      "track": "strategic",
+      "confidence": "85",
+      "edge": "-88.3",
+      "marketProb": "98",
+      "modelProb": "10",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T01:15:13.458Z"
+    },
+    {
+      "title": "Will Amina Mohammed be the next Secretary General of the United Nations?",
+      "pick": "No",
+      "category": "geopolitics",
+      "track": "strategic",
+      "confidence": "87",
+      "edge": "-88.9",
+      "marketProb": "99",
+      "modelProb": "10",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T01:15:13.458Z"
+    },
+    {
+      "title": "Will David Choquehuanca be the next Secretary General of the United Nations?",
+      "pick": "No",
+      "category": "geopolitics",
+      "track": "strategic",
+      "confidence": "88",
+      "edge": "-89.8",
+      "marketProb": "100",
+      "modelProb": "10",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T01:15:13.457Z"
+    },
+    {
+      "title": "Will Andrew Tate attend Taylor Swift's wedding?",
+      "pick": "No",
+      "category": "pop_culture",
+      "track": "strategic",
+      "confidence": "85",
+      "edge": "79.7",
+      "marketProb": "100",
+      "modelProb": "20",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T01:15:13.454Z"
+    },
     {
       "title": "Will Brittany Mahomes attend Taylor Swift's wedding?",
       "pick": "No",
@@ -564,5 +631,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-11T01:00:00.717Z"
+  "generatedAt": "2026-07-11T04:00:00.546Z"
 }
