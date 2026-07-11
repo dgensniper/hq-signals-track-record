@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 39,
+    "totalSignals": 40,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 12,
+    "pending": 13,
     "totalPnl": "-7902.17",
     "daysRunning": 8,
     "avgConfidence": "84",
-    "avgEdge": "17.1",
+    "avgEdge": "16.2",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 24,
+    "total": 25,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 12,
+    "pending": 13,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -60,14 +60,14 @@
       "winRate": "—"
     },
     {
-      "category": "tech",
-      "total": 1,
+      "category": "business",
+      "total": 2,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
     },
     {
-      "category": "business",
+      "category": "tech",
       "total": 1,
       "wins": 0,
       "resolved": 0,
@@ -75,6 +75,21 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will 11-12 SpaceX Starship launches successfully reach Space in 2026?",
+      "pick": "No",
+      "category": "business",
+      "track": "strategic",
+      "confidence": "84",
+      "edge": "-19.4",
+      "marketProb": "99",
+      "modelProb": "80",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T13:15:08.083Z"
+    },
     {
       "title": "Will Selena Gomez attend Taylor Swift's wedding?",
       "pick": "Yes",
@@ -661,5 +676,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-11T13:00:00.326Z"
+  "generatedAt": "2026-07-11T15:55:04.273Z"
 }
