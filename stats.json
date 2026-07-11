@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 37,
+    "totalSignals": 38,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 10,
+    "pending": 11,
     "totalPnl": "-7902.17",
     "daysRunning": 7,
     "avgConfidence": "84",
-    "avgEdge": "14.3",
+    "avgEdge": "15.7",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 22,
+    "total": 23,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 10,
+    "pending": 11,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -54,7 +54,7 @@
     },
     {
       "category": "politics",
-      "total": 1,
+      "total": 2,
       "wins": 0,
       "resolved": 0,
       "winRate": "—"
@@ -75,6 +75,21 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will the Republican Party win the NY-18 House seat?",
+      "pick": "No",
+      "category": "politics",
+      "track": "strategic",
+      "confidence": "83",
+      "edge": "68.4",
+      "marketProb": "90",
+      "modelProb": "22",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T07:15:11.071Z"
+    },
     {
       "title": "Will Maria Fernanda Espinosa Garcés be the next Secretary General of the United Nations?",
       "pick": "No",
@@ -631,5 +646,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-11T07:00:00.155Z"
+  "generatedAt": "2026-07-11T08:00:00.472Z"
 }

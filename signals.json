@@ -1,5 +1,18 @@
 [
   {
+    "title": "Will the Republican Party win the NY-18 House seat?",
+    "pick": "No",
+    "category": "politics",
+    "track": "strategic",
+    "confidence": "83",
+    "edge": "68.4",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T07:15:11.071Z"
+  },
+  {
     "title": "Will Maria Fernanda Espinosa Garcés be the next Secretary General of the United Nations?",
     "pick": "No",
     "category": "geopolitics",
