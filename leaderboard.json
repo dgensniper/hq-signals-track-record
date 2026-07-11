@@ -13,6 +13,19 @@
     "rank": 18.5
   },
   {
+    "category": "pop_culture",
+    "total": 3,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 3,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "85",
+    "avgEdge": "-37.6",
+    "rank": -1
+  },
+  {
     "category": "politics",
     "total": 1,
     "wins": 0,

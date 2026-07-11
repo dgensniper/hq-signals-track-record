@@ -1,5 +1,44 @@
 [
   {
+    "title": "Will Brittany Mahomes attend Taylor Swift's wedding?",
+    "pick": "No",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "83",
+    "edge": "-15.8",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T00:15:11.540Z"
+  },
+  {
+    "title": "Will Lana Del Rey attend Taylor Swift's wedding?",
+    "pick": "No",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "88",
+    "edge": "-82.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T00:15:11.539Z"
+  },
+  {
+    "title": "Will Patrick Mahomes attend Taylor Swift's wedding?",
+    "pick": "No",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "84",
+    "edge": "-15.2",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T00:15:11.539Z"
+  },
+  {
     "title": "Will the Republican Party win the PA-17 House seat?",
     "pick": "No",
     "category": "politics",

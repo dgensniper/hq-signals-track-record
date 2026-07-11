@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 30,
+    "totalSignals": 33,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 3,
+    "pending": 6,
     "totalPnl": "-7902.17",
     "daysRunning": 7,
     "avgConfidence": "84",
-    "avgEdge": "27.7",
+    "avgEdge": "21.7",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 15,
+    "total": 18,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 3,
+    "pending": 6,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -37,6 +37,13 @@
       "wins": 5,
       "resolved": 27,
       "winRate": "19"
+    },
+    {
+      "category": "pop_culture",
+      "total": 3,
+      "wins": 0,
+      "resolved": 0,
+      "winRate": "—"
     },
     {
       "category": "politics",
@@ -61,6 +68,51 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will Brittany Mahomes attend Taylor Swift's wedding?",
+      "pick": "No",
+      "category": "pop_culture",
+      "track": "strategic",
+      "confidence": "83",
+      "edge": "-15.8",
+      "marketProb": "18",
+      "modelProb": "2",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T00:15:11.540Z"
+    },
+    {
+      "title": "Will Lana Del Rey attend Taylor Swift's wedding?",
+      "pick": "No",
+      "category": "pop_culture",
+      "track": "strategic",
+      "confidence": "88",
+      "edge": "-82.0",
+      "marketProb": "87",
+      "modelProb": "5",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T00:15:11.539Z"
+    },
+    {
+      "title": "Will Patrick Mahomes attend Taylor Swift's wedding?",
+      "pick": "No",
+      "category": "pop_culture",
+      "track": "strategic",
+      "confidence": "84",
+      "edge": "-15.2",
+      "marketProb": "16",
+      "modelProb": "1",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-11T00:15:11.539Z"
+    },
     {
       "title": "Will the Republican Party win the PA-17 House seat?",
       "pick": "No",
@@ -512,5 +564,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-11T00:00:00.633Z"
+  "generatedAt": "2026-07-11T01:00:00.717Z"
 }
