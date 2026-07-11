@@ -7,7 +7,7 @@
     "resolved": 27,
     "pending": 12,
     "totalPnl": "-7902.17",
-    "daysRunning": 7,
+    "daysRunning": 8,
     "avgConfidence": "84",
     "avgEdge": "17.1",
     "startingBankroll": 10000
@@ -661,5 +661,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-11T11:00:01.006Z"
+  "generatedAt": "2026-07-11T12:00:00.462Z"
 }
