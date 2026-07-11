@@ -1,23 +1,23 @@
 {
   "overview": {
     "winRate": "18.5",
-    "totalSignals": 29,
+    "totalSignals": 30,
     "wins": 5,
     "losses": 22,
     "resolved": 27,
-    "pending": 2,
+    "pending": 3,
     "totalPnl": "-7902.17",
     "daysRunning": 7,
     "avgConfidence": "84",
-    "avgEdge": "25.8",
+    "avgEdge": "27.7",
     "startingBankroll": 10000
   },
   "strategic": {
-    "total": 14,
+    "total": 15,
     "wins": 3,
     "losses": 9,
     "resolved": 12,
-    "pending": 2,
+    "pending": 3,
     "winRate": "25.0",
     "totalPnl": "-3000.17"
   },
@@ -39,6 +39,13 @@
       "winRate": "19"
     },
     {
+      "category": "politics",
+      "total": 1,
+      "wins": 0,
+      "resolved": 0,
+      "winRate": "—"
+    },
+    {
       "category": "tech",
       "total": 1,
       "wins": 0,
@@ -54,6 +61,21 @@
     }
   ],
   "recentSignals": [
+    {
+      "title": "Will the Republican Party win the PA-17 House seat?",
+      "pick": "No",
+      "category": "politics",
+      "track": "strategic",
+      "confidence": "83",
+      "edge": "82.0",
+      "marketProb": "92",
+      "modelProb": "10",
+      "correct": null,
+      "outcome": null,
+      "pnl": "0.00",
+      "resolvedAt": null,
+      "createdAt": "2026-07-10T23:15:09.597Z"
+    },
     {
       "title": "Will Apple release iPhone 18 in 2026?",
       "pick": "Yes",
@@ -490,5 +512,5 @@
       "createdAt": "2026-07-03T11:45:03.607Z"
     }
   ],
-  "generatedAt": "2026-07-10T23:00:00.675Z"
+  "generatedAt": "2026-07-11T00:00:00.633Z"
 }

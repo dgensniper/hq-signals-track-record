@@ -13,6 +13,19 @@
     "rank": 18.5
   },
   {
+    "category": "politics",
+    "total": 1,
+    "wins": 0,
+    "losses": 0,
+    "resolved": 0,
+    "pending": 1,
+    "winRate": null,
+    "pnl": "0.00",
+    "avgConfidence": "83",
+    "avgEdge": "82.0",
+    "rank": -1
+  },
+  {
     "category": "tech",
     "total": 1,
     "wins": 0,

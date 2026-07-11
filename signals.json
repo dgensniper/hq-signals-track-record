@@ -1,5 +1,18 @@
 [
   {
+    "title": "Will the Republican Party win the PA-17 House seat?",
+    "pick": "No",
+    "category": "politics",
+    "track": "strategic",
+    "confidence": "83",
+    "edge": "82.0",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-10T23:15:09.597Z"
+  },
+  {
     "title": "Will Apple release iPhone 18 in 2026?",
     "pick": "Yes",
     "category": "tech",
