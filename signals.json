@@ -1,5 +1,18 @@
 [
   {
+    "title": "Will Selena Gomez attend Taylor Swift's wedding?",
+    "pick": "Yes",
+    "category": "pop_culture",
+    "track": "strategic",
+    "confidence": "84",
+    "edge": "68.7",
+    "correct": null,
+    "outcome": null,
+    "pnl": "0.00",
+    "resolvedAt": null,
+    "createdAt": "2026-07-11T08:15:13.017Z"
+  },
+  {
     "title": "Will the Republican Party win the NY-18 House seat?",
     "pick": "No",
     "category": "politics",
